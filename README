@@ -1,1 +1,190 @@
+# Smart Health Inspection Platform
 
+## Overview
+
+**Smart Health Inspection Platform** is a Python-based web application built with **Streamlit**.  
+It is designed to support public health inspectors in managing digital inspection records, assessing facility risk, evaluating water quality, reviewing cosmetic product safety, generating investigation reports, and accessing inspector training content.
+
+The app concept is based on a modern public health inspection framework covering water safety, cosmetic GMP, contamination investigation, hygiene evaluation, biological and chemical indicators, and digital inspection transformation. :contentReference[oaicite:0]{index=0}
+
+---
+
+## Purpose of the App
+
+The purpose of this platform is to help health inspectors move from manual, paper-based inspection work to a **smart, digital, risk-based inspection system**.
+
+The app helps users to:
+
+- Record new inspection visits
+- Assess water quality risks
+- Evaluate cosmetic product safety
+- Review hygiene and disinfection programs
+- Calculate facility risk scores
+- Generate contamination investigation reports
+- View inspection dashboards and analytics
+- Access a training knowledge base for inspectors
+
+---
+
+## Main Features
+
+### 1. Dashboard
+
+The dashboard provides a quick overview of inspection performance and facility risk levels.
+
+It includes:
+
+- Total inspections
+- Number of critical facilities
+- Average risk score
+- High-risk threshold
+- Facility risk bar chart
+- Risk category pie chart
+- Inspection records table
+
+---
+
+### 2. New Inspection Module
+
+This module allows inspectors to enter basic inspection information, including:
+
+- Facility name
+- Facility type
+- Location or district
+- Inspector name
+- Inspection date
+- Field observations
+- Photo evidence upload
+
+This supports better documentation and traceability.
+
+---
+
+### 3. Water Quality Assessment
+
+This module evaluates water systems such as:
+
+- Drinking water
+- Swimming pools
+- Water dispensers and coolers
+
+It checks important indicators such as:
+
+- pH value
+- Residual or free chlorine
+- Turbidity
+- E. coli detection
+- Legionella detection
+- Visible biofilm
+- Maintenance record gaps
+
+The app then calculates a risk score and provides a decision such as:
+
+- Low risk
+- Moderate risk
+- High risk
+- Critical risk
+
+---
+
+### 4. Cosmetic Product Safety
+
+This module supports cosmetic product and facility inspection.
+
+It evaluates:
+
+- GMP / ISO 22716 documentation
+- Ingredient compliance
+- Banned or restricted substances
+- Microbiological test results
+- Storage and transport conditions
+- Labeling completeness
+
+The module gives a cosmetic safety risk score and recommends the appropriate regulatory response.
+
+---
+
+### 5. Hygiene Evaluation
+
+This module evaluates hygiene and disinfection programs.
+
+It reviews:
+
+- Cleaning schedules
+- Chemical labeling
+- Dilution control
+- PPE availability
+- Biological waste management
+- Surface swab results
+
+The app generates a hygiene score out of 100.
+
+---
+
+### 6. Risk Scoring
+
+This module helps inspectors prioritize facilities using a risk-based model.
+
+The score is calculated based on:
+
+- Previous violations
+- Vulnerable population served
+- Recent complaints
+- Laboratory failures
+- Documentation quality
+- Facility complexity
+
+The final result classifies the facility as:
+
+- Low priority
+- Moderate priority
+- High priority
+- Critical priority
+
+---
+
+### 7. Investigation Report Generator
+
+This module generates a structured contamination investigation report.
+
+The report includes:
+
+- Facility name
+- Incident type
+- Confirmed finding
+- Suspected contamination source
+- Sampling points
+- Corrective actions
+- Correction deadline
+- Inspector name
+- Follow-up recommendations
+
+The report can be downloaded as a `.txt` file.
+
+---
+
+### 8. Training Knowledge Base
+
+This module provides short learning content for inspectors.
+
+Topics include:
+
+- Water Safety Standards
+- Cosmetic GMP
+- Biological Indicators
+- Field Investigation
+- Hygiene Evaluation
+- Digital Inspection Transformation
+
+It also includes a mini quiz to support training and knowledge checking.
+
+---
+
+## Technologies Used
+
+The app uses the following Python libraries:
+
+```bash
+streamlit
+pandas
+plotly
